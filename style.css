@@ -178,6 +178,10 @@ h2{
     border-bottom: 2px solid rgb(147, 147, 147);
 }
 
+.order-container::-webkit-scrollbar{
+    display: none;
+}
+
 .item-container{
     display: flex;
     justify-content: space-between;
