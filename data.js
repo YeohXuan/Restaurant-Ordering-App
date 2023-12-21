@@ -61,7 +61,7 @@ export const mainDishes = [
         id: uuidv4()
     },
     {
-        food: 'Tom Yum W Rice',
+        food: 'Tom Yum w Rice',
         specification: ['prawn','mushroom','clam'],
         price: 14.80,
         image: "images/main-dishes/tomyum-rice.jpeg",

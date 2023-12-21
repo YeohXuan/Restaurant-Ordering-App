@@ -38,10 +38,8 @@ h1{
     font-size: 38px;
 }
 
-
 .chi-name{
     font-family: 'Ma Shan Zheng', sans-serif;
-    
 }
 
 h2{
@@ -63,7 +61,7 @@ h2{
 }
 
 .navbar{
-    overflow-x: scroll;
+    overflow: scroll;
     display: flex;
     gap: 8px;
     margin-top: 10px;
