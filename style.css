@@ -1,0 +1,343 @@
+body{
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    -webkit-user-select: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.content{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+header{
+    color: white;
+    background-image: url('images/burger.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 65%;
+    height: 170px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-name{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-weight: 600;
+    letter-spacing: 12px;
+    font-size: 38px;
+}
+
+
+.chi-name{
+    font-family: 'Ma Shan Zheng', sans-serif;
+    
+}
+
+h2{
+    margin: 0;
+    font-size: 34px;
+}
+
+@media screen and (max-width: 450px){
+    header{
+        padding: 0 20px;
+    }
+    h1{
+        font-size: 7.7vw;
+        letter-spacing: 4px;
+    }
+    h2{
+        font-size: 7.1vw;
+    }
+}
+
+.navbar{
+    overflow-x: scroll;
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 0 8px;
+    white-space: nowrap;
+}
+
+.navbar::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    background-color: #ffffff3c;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F1F1F1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.category-name{
+    letter-spacing: 1px;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 4px solid #ea9d31;
+    padding: 0 12px 0 8px;
+    margin: 8px 0 0 0;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    border-bottom: 1px solid #ffffff3c;
+}
+
+.food{
+    display: flex;
+}
+
+.category{
+    color: white;
+}
+
+.imgs{
+    width: 90px;
+    height: 80px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.details{
+    margin-top: 8px;
+}
+
+.food-name{
+    color: #ea9d31;
+    font-size: 1.3em;
+}
+
+.food-name,
+.food-price{
+    margin: 0;
+}
+
+.specification{
+    margin: 0 0 6px 0;
+    color: rgba(255, 255, 255, 0.835);
+}
+
+.add-to-cart{
+    color:#ffffffca;
+    border: 1px solid #ffffffca;
+    border-radius: 50%;
+    padding: 0 10px;
+    margin-left: auto;
+    font-size: 32px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container{
+    display: none;
+    color: white;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(106, 106, 106);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    margin: 0;
+    margin: 6px 0;
+    font-size: 24px;
+}
+
+.order-container{
+    max-height: 400px;
+    overflow: scroll;
+    border-bottom: 2px solid rgb(147, 147, 147);
+}
+
+.item-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.item-container h3{
+    margin: 0;
+}
+
+.item{
+    display: flex;
+}
+
+.item h3{
+    font-size: 20px;
+    color:#ea9d31;
+}
+
+.remove-btn{
+    background-color: transparent;
+    border: none;
+    color: rgb(209, 209, 209);
+    margin: 0;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.container h1{
+    margin: 0;
+    font-size: 30px;
+}
+
+.prices-container{
+    padding: 10px;
+}
+
+.price-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-container h3{
+    margin: 0;
+    color: rgb(212, 211, 211);
+}
+
+.icon-container{
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.fa-chevron-down{
+    padding: 8px;
+}
+
+.fa-chevron-up{
+    display: none;
+    position: relative;
+    top: 10px;
+}
+
+.green-btn{
+    background-color: #16DB99;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 22px;
+    padding: 16px 0;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.continue-container{
+    display: none;
+    color: white;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(106, 106, 106);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-sizing: border-box;
+}
+
+.message{
+    margin: 0;
+    padding: 8px;
+    font-size: 1.5em;
+}
+
+.name{
+    color: #ea9d31;
+}
+
+.card-details-container{
+    display: none;
+    background-color: rgb(54, 54, 54);
+    position: fixed;
+    top: 225px;
+    left: 0; 
+    right: 0;
+    margin: auto;
+    color: white;
+    max-width: 480px;
+    width: 90%;
+    max-height: 600px;
+    border-radius: 12px;
+}
+
+.fa-xmark{
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.card-details-container h1{
+    letter-spacing: 0.2px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.inputs{
+    color: white;
+    display: block;
+    background-color: transparent;
+    border: 2px solid rgb(147, 147, 147);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    width: 78%;
+}
+.inputs::placeholder{
+    color: rgb(221, 221, 221);
+}
+
+.pay-btn{
+    display: block;
+    margin: 20px auto;
+    background-color: #16DB99;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    width: 93%;
+    font-size: 18px;
+    padding: 12px 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
