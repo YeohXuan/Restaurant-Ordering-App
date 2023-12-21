@@ -174,7 +174,7 @@ h2{
 
 .order-container{
     max-height: 400px;
-    overflow: scroll;
+    overflow-y: scroll;
     border-bottom: 2px solid rgb(147, 147, 147);
 }
 
